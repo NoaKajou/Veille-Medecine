@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Veille IA — Médecine</title>
+  <meta name="description" content="Page de veille technologique sur l'IA en médecine — tendances, innovations, risques.">
+  <style>
+    :root{--accent:#0f62fe;--bg:#f7f9fc;--card:#ffffff;--text:#0b1226}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:var(--bg);color:var(--text);line-height:1.5}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c4dff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:8px 0 24px;color:#3b4960}
+    nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+    .btn{background:var(--card);border:1px solid #e6eefc;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--text);font-size:0.9rem}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(11,18,38,0.06)}
+    .card h3{margin:0 0 8px;font-size:1.05rem}
+    .meta{font-size:0.85rem;color:#5a6b80}
+
+    footer{margin-top:24px;text-align:center;color:#5a6b80;font-size:0.9rem}
+    .badge{display:inline-block;padding:6px 10px;background:rgba(15,98,254,0.08);color:var(--accent);border-radius:999px;font-weight:600}
+
+    /* responsive small tweaks */
+    @media (max-width:520px){header{gap:12px}.logo{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">IA</div>
+      <div>
+        <h1>Veille technologique — IA en médecine</h1>
+        <p class="lead">Synthèse simple des tendances, innovations et points de vigilance pour l'utilisation de l'intelligence artificielle en santé.</p>
+      </div>
+    </header>
+
+    <nav>
+      <a class="btn" href="#tendances">Tendances</a>
+      <a class="btn" href="#innovations">Innovations récentes</a>
+      <a class="btn" href="#risques">Risques</a>
+      <a class="btn" href="#actions">Actions recommandées</a>
+    </nav>
+
+    <section id="tendances" class="card" style="margin-bottom:16px">
+      <h2 style="margin-top:0">Tendances principales</h2>
+      <div class="grid">
+        <div>
+          <h3>Diagnostic par imagerie</h3>
+          <p class="meta">IA pour radiologie, dépistage automatisé, second avis.</p>
+        </div>
+        <div>
+          <h3>LLM & multimodal</h3>
+          <p class="meta">Grandes modèles pour synthèse de rapports, multimodalité (texte + image + données).</p>
+        </div>
+        <div>
+          <h3>Surveillance & wearables</h3>
+          <p class="meta">Analyse continue des données pour télésurveillance et alertes précoces.</p>
+        </div>
+        <div>
+          <h3>Automation administrative</h3>
+          <p class="meta">Transcription et génération automatique de comptes-rendus pour réduire la charge clinique.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="innovations" class="card">
+      <h2 style="margin-top:0">Innovations récentes</h2>
+      <div class="grid">
+        <div>
+          <h3>Stéthoscope intelligent</h3>
+          <p class="meta">Détection rapide de pathologies cardiaques au chevet du patient.</p>
+        </div>
+        <div>
+          <h3>Assistants ambient</h3>
+          <p class="meta">Enregistrement et résumé automatique des consultations cliniques.</p>
+        </div>
+        <div>
+          <h3>Optimisation d'essais cliniques</h3>
+          <p class="meta">Sélection de patients et monitoring en temps réel via IA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="risques" class="card" style="margin-top:16px">
+      <h2 style="margin-top:0">Points de vigilance</h2>
+      <ul>
+        <li>Biais des modèles — s'assurer de la représentativité des données.</li>
+        <li>Interopérabilité avec les DSE / EHR.</li>
+        <li>Protection des données et conformité RGPD.</li>
+        <li>Acceptation clinique et transparence des recommandations.</li>
+        <li>Cadre réglementaire et responsabilité médicale.</li>
+      </ul>
+    </section>
+
+    <section id="actions" class="card" style="margin-top:16px">
+      <h2 style="margin-top:0">Actions recommandées</h2>
+      <ol>
+        <li>Prioriser des proof-of-concepts cliniques avec validation réelle.</li>
+        <li>Impliquer des cliniciens dès la conception.</li>
+        <li>Mettre en place des jeux de données diversifiés et anonymisés.</li>
+        <li>Documenter l'auditabilité et les procédures de recours.</li>
+      </ol>
+    </section>
+
+    <section id="sources" class="card" style="margin-top:16px">
+      <h2 style="margin-top:0">Sources</h2>
+      <ul>
+        <li>The Guardian – Stéthoscope IA détectant des pathologies cardiaques</li>
+        <li>The Verge – Microsoft Dragon Copilot pour le milieu médical</li>
+        <li>Time – Étude sur la réduction du burnout via l'IA ambient</li>
+        <li>Rapports divers sur l'IA médicale (imagerie, essais cliniques, LLM multimodaux)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Veille technologique sur l'IA en médecine.</p>
+    </footer>
+  </div>
+</body>
+</html>
